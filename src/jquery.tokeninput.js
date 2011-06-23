@@ -305,7 +305,7 @@ $.TokenList = function (input, url_or_data_or_function, settings) {
                         add_token($(selected_dropdown_item));
                     }
                     
-                    if(settings.allowCustomEntry == true && $.trim($(input_box).val()) != '') {
+                    if(settings.allowCustomEntry == true && $.trim($(input_box).val()) != '' && !dropdown.is(':visible')) {
                         add_token($(input_box).val());
                     }
                     
